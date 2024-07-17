@@ -1,0 +1,160 @@
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+  --text: #0a1c10;
+  --darktext: #e5f6ea;
+  --bg: #f1fbf4;
+  --darkbg: #041008;
+  --darkprime: #27ce59;
+  --prime: #33d864;
+  --darksecond: #118835;
+  --second: #77ee9b;
+  --darkglow: #0cbb40;
+  --glow: #43f378;
+}
+
+.placeholder {
+  height: 200px;
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.explore-container {
+  display: flex;
+  flex-direction: row;
+  background: rgb(17, 136, 53);
+  background: linear-gradient(
+    34deg,
+    rgba(17, 136, 53, 1) 0%,
+    rgba(119, 238, 155, 1) 31%,
+    rgba(241, 251, 244, 1) 70%
+  );
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.explore-section {
+  margin: auto;
+  max-width: 1000px;
+  block-size: 100%;
+  inline-size: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  user-select: none;
+}
+
+.explore-section h1 {
+  font-size: 96px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 30px;
+  padding: 50px;
+}
+
+.explore-card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 22px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  user-select: none;
+}
+
+.explore-card a{
+color: var(--text);
+}
+
+.explore-card img {
+  width: 1000px;
+  border-radius: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 22px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 30px;
+  user-select: none;
+}
+
+.download-btn-section {
+  background-color: var(--prime);
+  padding: 5px 10px 5px 10px;
+  border: 1px solid grey;
+  font-size: 17px;
+  border-radius: 1000px;
+  width: 30%;
+  z-index: 10;
+  text-align: center;
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 5px;
+  inline-size: 100%;
+  user-select: none;
+}
+
+.download-btn-section h5 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.explore-card .download-btn-section:hover {
+  background-color: var(--glow);
+  color: var(--darkbg);
+}
+
+.explore-card .fa-download {
+  margin-left: 10px;
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 9px solid rgba(255, 255, 255, 0.18);
+  padding: 5px 10px 5px 10px;
+  font-size: 22px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#backToTopBtn:hover {
+  scale: 1.2;
+}

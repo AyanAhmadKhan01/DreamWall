@@ -1,0 +1,533 @@
+:root {
+    --color: #3c3163;
+    --transition-time: 0.5s;
+    --text: #0a1c10;
+    --bg: #f1fbf4;
+    --prime: #33d864;
+    --second: #77ee9b;
+    --glow: #43f378;
+  }
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  background-color: var(--text);
+  scroll-behavior: smooth;
+}
+
+#team-info {
+  transition: 0s;
+}
+
+#team-meet {
+  transition: 0s;
+}
+#fullscreen-btn {
+  position: absolute;
+  right: 40px;
+  top: -160px;
+  font-size: 29px;
+  color: var(--text);
+  background-color: transparent;
+  border: 0;
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.10 );
+  padding: 2px 11px 2px 7px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+
+#fullscreen-btn:hover {
+  scale: 1.1;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+  display: none
+}
+
+
+  .team-nav-bar {
+    z-index: 2;
+  }
+
+  .team-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    color: var(--text);
+    position: relative;
+  }
+
+  .team-page h1 {
+    font-weight: 700;
+    font-size: 65px;
+    text-align: center;
+  }
+
+  .team-card {
+    width: 100vw;
+    height: 100vh;
+   background: rgb(0,0,0);
+   background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(33,34,33,1) 100%);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+  }
+
+  .team-card .team-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .team-card-content {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: 190px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .team-card-content h1 {
+    color: var(--text);
+    letter-spacing: 9px;
+    word-spacing: 7px;
+    border-radius: 20px;
+    margin: auto;
+    font-size: clamp(20px, 4vw, 90px);
+    font-weight:  600;
+  }
+
+  .team-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+.team-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.team-card-section #dev-portfolio {
+  background-color: var(--prime);
+    outline: 0px;
+    color: var(--text);
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: .6s scale, 0.3s background-color;
+}
+
+.team-card-section #dev-portfolio:hover {
+  background-color: var(--glow);
+  scale: 1.06;
+}
+
+  .team-card-section #Meet-dev {
+    background-color: transparent;
+    outline: 0px;
+    color: var(--text);
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 240px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .6s scale, 0.3s background-color;
+  }
+
+ .team-card-section #Meet-dev:hover {
+  background-color: var(--glow);
+  scale: 1.06;
+ } 
+
+  .team-scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .team-card-section p {
+    color: var(--text);
+    letter-spacing: 2px;
+    max-width: 1000px;
+  }
+
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+
+
+.team-card-content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-page-section {
+  background-color: var(--bg);
+  width: 475px;
+  padding: 20px;
+  z-index: 1;
+  border-radius: 9px;
+  border: 10px solid lightblue;
+  border-top: 140px solid #33d864;
+  position: relative;
+  transition: 1s;
+}
+.team-page-section .freelance-logo{
+width: 400px;
+border-radius: 40%;
+margin-top: -200px;
+scale: 0.67;
+border: 2px solid black;
+filter: drop-shadow(12px 4px 9px #223810);
+}
+
+.team-page-section h1 {
+  text-align: center;
+  letter-spacing: 0px;
+  margin-top: -70px;
+  color: var(--text);
+  text-align: left;
+  margin-left: 20px;
+}
+
+.team-page-section p {
+font-size: 16px;
+margin-top: -5px;
+margin-left: 20px;
+padding-top: 5px;
+text-align: center;
+background-color: #43f378;
+width: 220px;
+height: 35px;
+border: 1px solid grey;
+border-radius: 200px;
+letter-spacing: 2px;
+transition: 0.5s;
+display: none;
+}
+
+.team-page-section .fa-discord {
+position: absolute;
+right: 25px;
+top: -25px;
+font-size: 29px;
+color: var(--text);
+padding: 6px;
+border-radius: 5px;
+border-top: 1px solid grey;
+border-right: 1px solid grey ;
+transition: .4s;
+cursor: pointer;
+}
+
+.team-page-section .fa-discord:hover {
+  background-color: #5865F2;
+  color: white;
+  border: 1px solid #5865F2;
+  border-radius: 7px;
+  scale: 0.90;
+}
+
+
+.team-page-section .fa-linkedin {
+  position: absolute;
+right: 95px;
+top: -25px;
+font-size: 31px;
+color: var(--text);
+padding: 6px 8px 6px 8px;
+border-radius: 5px;
+border-top: 2px solid grey;
+border-bottom: 2px solid grey ;
+transition: .4s;
+cursor: pointer;
+}
+
+.team-page-section .fa-linkedin:hover {
+  background-color: #0077B5;
+  color: white;
+  border: 1px solid #0077B5;
+  border-radius: 7px;
+  scale: 0.90;
+}
+
+
+.team-page-section .fa-github {
+  position: absolute;
+  right: 160px;
+  top: -25px;
+  font-size: 31px;
+  color: var(--text);
+  padding: 6px 8px 6px 8px;
+  border-radius: 5px;
+  border-left: 2px solid grey;
+  border-bottom: 2px solid grey ;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.team-page-section .fa-github:hover {
+  background-color: 	#24292e;
+  color: white;
+  border: 1px solid #24292e;
+  border-radius: 7px;
+  scale: 0.90;
+}
+
+#team-page-icons {
+  display: none;
+}
+
+.team-card-content2 h5 {
+  z-index: 1;
+  font-size: 40px;
+  background-color: #33d864;
+  padding: 6px 40px 6px 40px;
+  border-radius: 50px;
+  border: 1px solid black;
+  color: var(--bg);
+  margin-top: 10px;
+  scale: 0.80;
+  transition: .5s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.team-card-content2 h5:hover {
+ scale: 0.90;
+ background-color: var(--prime);
+}
+
+.team-card-content #skill-title {
+  color: var(--bg);
+  font-weight: 500;
+  max-width: 60%;
+  overflow: hidden;
+  letter-spacing: 8px;
+  margin-top: -170px;
+  background: rgba( 43, 43, 42, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );;
+}
+
+
+
+ .fa-code {
+  color: var(--prime);
+  margin-left: 20px;
+}
+
+.team-page-section3 {
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  max-width: 50%;
+  min-height: 20px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+.team-page-skills {
+  background: rgba( 22, 22, 22, 0.9 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  min-width: 200px;
+  max-width: 300px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 500px;
+  cursor: pointer;
+  transition: .8s;
+  gap: 10px;
+}
+.team-page-skills:hover {
+  flex-grow: 10;
+  scale: 1.07;
+}
+
+
+.video-skill {
+  height: 100vh;
+  width: 100vw;
+  object-fit: fill;
+}
+
+.team-page-skills .fa-brands, .fa-solid {
+  margin-left: 4px;
+}
+
+.team-page-skills h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.team-page-skills:nth-child(1) {
+  color: #f06529;
+  border: 1px solid #e34c26;
+}
+
+.team-page-skills:nth-child(2) {
+  color: #2965f1;
+  border: 1px solid #264de4;
+}
+
+.team-page-skills:nth-child(3) {
+  color: #f0db4f;
+  border: 1px solid #f0db4f;
+}
+
+.team-page-skills:nth-child(4) {
+  color: #68a063;
+  border: 1px solid #3c873a;
+}
+
+.team-page-skills:nth-child(5) {
+  color: #563d7c;
+  border: 1px solid #563d7c;
+}
+
+.team-page-skills:nth-child(6) {
+  color: #3FA037;
+  border: 1px solid #4DB33D;
+}
+
+.team-page-skills:nth-child(7) {
+  color: wheat;
+  border: 1px solid wheat;
+}
+
+.team-page-skills:nth-child(8) {
+  color: #F1502F;
+  border: 1px solid #F1502F;
+}
+
+.team-card-container {
+  margin-top: 100px;
+}
+
+#resume-tittle {
+  margin-top: -190px;
+  margin-bottom: 20px;
+  color: var(--bg);
+  font-weight: 400;
+  letter-spacing: 12px;
+}
+
+.team-card-content iframe {
+  width: 1500px;
+  height: 700px;
+}
+
+.resume-section {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#contact-page-heading {
+  margin-top: -150px;
+  font-size: 86px;
+  letter-spacing: 7px;
+  color: var(--bg);
+  background: rgba( 49, 46, 46, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width: 500px;
+  min-width: 400px;
+}
+
+.contact-top {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background: rgba( 255, 255, 255, 0 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width: 600px;
+  min-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+.contact-top  #name, #email, #message {
+  background: rgba( 255, 255, 255, 0 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: var(--second);
+}
+
+.contact-top #name::placeholder, #email::placeholder, #message::placeholder {
+  color: var(--bg);
+}
+

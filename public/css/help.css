@@ -1,0 +1,123 @@
+:root {
+    --color: #3c3163;
+    --transition-time: 0.5s;
+    --text: #0a1c10;
+    --bg: #f1fbf4;
+    --prime: #33d864;
+    --second: #77ee9b;
+    --glow: #43f378;
+  }
+
+.help-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(69,226,117);
+  color: var(--text);
+  position: relative;
+  background: linear-gradient(0deg, rgba(69,226,117,1) 0%, rgba(184,235,199,1) 97%, rgba(241,251,244,1) 100%);
+}
+
+.navigation-bar {
+  position: absolute;
+ left: 100px;
+ top: 30px;
+ user-select: none;
+ color: var(--text);
+ background: rgba( 255, 255, 255, 0.35 );
+ backdrop-filter: blur( 20px );
+ -webkit-backdrop-filter: blur( 20px );
+ border-radius: 90px;
+ border: 1px solid rgba( 255, 255, 255, 0.18 );
+ padding: 15px;
+ opacity: 0.90;
+}
+
+.help-active-page {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.navigation-bar a {
+  color: var(--text);
+  font-size: 18px;
+  transition: .3s;
+}
+
+.navigation-bar a:hover  {
+ font-size: 19px;
+ text-shadow: 0px 0px 1px black;
+}
+
+.navigation-bar .fa-house {
+  margin-right: 10px;
+}
+
+.help-container h1{
+  margin-top: 100px;
+  color: var(--text);
+  font-size: 73px;
+  font-weight: 700;
+}
+
+.help-section {
+  text-align: center;
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 200px;
+  margin-right: 200px;
+  user-select: none;
+  margin-bottom: 100px;
+}
+
+
+
+.help-sub-section {
+  background: rgba( 255, 255, 255, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  min-width:  350px;
+  height: 200px;
+  inline-size: 40%;
+  flex: 1 1 200px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .3s;
+}
+
+
+.help-sub-section:hover {
+  scale:1.03;
+}
+
+.help-sub-section i {
+  font-size: 32px;
+  background-color: #269e4a;
+  color: var(--bg);
+ width: 60px;
+ height: 60px;
+ display: flex;
+ justify-content: center;
+ margin: auto;
+ margin-top: 25px;
+ align-items: center;
+  border-radius: 6px;
+}
+
+.help-sub-section h2 {
+  margin-top: 10px;
+  font-size: 39px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.help-sub-section p {
+font-size: 17px;
+font-weight: 400;
+color: var(--text);
+}
+

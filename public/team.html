@@ -1,0 +1,136 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Wall - MiniPortfolio</title>
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="icon" href="Images/Dream Wall Logo1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+
+<div class="team-page team-scroll-container">
+     <div class="navigation-bar team-nav-bar">
+        <a href="help.html"><i class="fa-solid fa-house"></i>Help</a>
+        <span class="seperator">»</span>
+        <span class="help-active-page">Team</span>
+    </div> 
+    <section>
+    <div class="team-card" id="team-meet">
+        <img src="Images/Team/Team 1.jpg" alt="" class="team-bg-img">
+        <div class="team-card-content">
+            <div class="team-card-section">
+            <h1>Meet The Team</h1>
+            <p> I'm DevLegend, the creator of Dream Wall. Combining my love for art and technology, I've crafted this platform for you to explore and share stunning wallpapers. Every detail is designed to provide an inspiring experience. Welcome to Dream Wall!</p>
+            <div class="team-btns">
+            <button id="dev-portfolio" data-url="https://ayanahmadkhan01.github.io/Portfolio.io/"data-target="_blank" onclick="openLink(this)">Portfolio</button>
+            <button id="Meet-dev"  data-url="#team-info" onclick="openLink(this)">Meet the Dev</button>
+        </div>
+            <button id="fullscreen-btn"><i class="fa-solid fa-expand"></i></button>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="team-card" id=team-info>
+        <img src="Images/Team/Team 2.jpg" alt="" class="team-bg-img">
+        <div class="team-card-content2" id="expand-btn">
+            <div class="team-page-section">
+                <div id="team-page-icons">
+                <i class="fa-brands fa-discord" data-url="https://discord.gg/z7agFHxwJT" data-target="_blank" onclick="openLink(this)"></i>
+                <i class="fa-brands fa-linkedin" data-url="https://www.linkedin.com/in/ayanahmadkhan/" data-target="_blank" onclick="openLink(this)"></i>
+                <i class="fa-brands fa-github" data-url="https://github.com/AyanAhmadKhan01" data-target="_blank" onclick="openLink(this)"></i>
+            </div>
+    <img src="Images/DevLegend.png" alt="" class="freelance-logo">
+    <h1 id="team-owner-name">DevLegend</h1>
+    <p id="team-page-tags">Fullstack Developer</p>
+</div>
+<h5 id="expand-btn">Expand</h5>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="team-card">
+        <img src="Images/Team/Team 3.jpg" alt="" class="team-bg-img" style="opacity: 0;">
+        <video src="video music.mp4" autoplay loop muted class="video-skill"></video>
+        <div class="team-card-content">
+            <div class="team-card-container">
+            <h1 id="skill-title">Technical Expertise<i class="fa-solid fa-code"></i></h1>
+           <div class="team-page-section3">
+            <div class="team-page-skills">
+            <h6>HTML<i class="fa-brands fa-html5"></i></h6>
+        </div>
+        <div class="team-page-skills">
+            <h6>CSS <i class="fa-brands fa-css3-alt"></i></h6>
+            </div>
+            <div class="team-page-skills">
+            <h6>JAVASCRIPT <i class="fa-brands fa-js"></i></h6>
+            </div>
+            <div class="team-page-skills">
+            <h6>NodeJs <i class="fa-brands fa-node-js"></i></h6>
+            </div>
+            <div class="team-page-skills">
+            <h6>Bootstrap <i class="fa-brands fa-bootstrap"></i></h6>
+            </div>
+            <div class="team-page-skills">
+            <h6>Mongo DB <i class="fa-solid fa-database"></i></h6>
+            </div>
+            <div class="team-page-skills">
+            <h6>Express Js <i class="fa-solid fa-code"></i></h6>
+            </div>
+            <div class="team-page-skills">
+            <h6>Git <i class="fa-solid fa-code-fork"></i></h6>
+            </div>
+           </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section>
+    <div class="team-card">
+        <img src="Images/Team/Team 4.jpg" alt="" class="team-bg-img">
+        <div class="team-card-content">
+            <h1 id="resume-tittle">Resume</h1>
+            <div class="resume-section">
+                <div class="resume-sub-section">
+             <iframe src="Ayan Ahmad Khan.pdf"></iframe> 
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="team-card">
+        <img src="Images/Team/Team 6.jpg" alt="" class="team-bg-img">
+        <div class="team-card-content">
+            <h1 id="contact-page-heading">Contact</h1>
+            <div class="contact-top">
+            <div class="contact-section ">        
+                <form id="myform" onsubmit="return validateForm()" action="/" method="post">
+                <input type="text" required id="name" name="name" placeholder="Enter your full name"> 
+                <input type="email" required name="email" id="email" placeholder="Email"> 
+                <textarea id="message" required name="message" placeholder="Enter your message"></textarea> 
+                <input type="submit" type="submit" id="submit">
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+      </div>
+     
+
+      <script src="script/team.js"></script>
+</body>
+</html>

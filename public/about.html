@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Wall - About</title>
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="icon" href="Images/Dream Wall Logo1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-section">
+                <h1>Dream Wall</h1>
+        <div class="navbar">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/wallpaper.html">Explore</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/register" class="loginbtn">Sign Up</a></li>  
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </div>
+      </div>
+
+
+<div class="about-page">
+    <div class="navigation-bar">
+        <a href="help.html"><i class="fa-solid fa-house"></i>Help</a>
+        <span class="seperator">»</span>
+        <span class="help-active-page">About</span>
+</div>
+<div class="about-container">
+    <h1>About <i class="fa-solid fa-angles-right"></i><span> DreamWall</span></h1>
+<p>Dream Wall is a site created by and for people who like wallpapers.</p>
+<h2>How To Upload</h2>
+<h4 id="about-page-video"></h4>
+<div class="dreamwall-tutorial">
+    <video src="Dream Wall.mp4" loop muted poster="dream wall 1.png" id="myVideo"></video>
+</div>
+<h2>Delete Wallpaper</h2>
+<h4></h4>
+<p>Delete feature is not avalaible for now but will be avalaible in future. if you want to report/delete any wallpaper then make sure to contact us, if the wallpaper doesn't follow our policy or guidelines then user account and wallpaper will be banned from the website</p>
+<h2>Copyright</h2>
+<h4></h4>
+<p id="about-page-lastline">As Dream Wall's content is user-submitted, some of it will inevitably be the work of others. We strive to respect copyright law, so if you own the rights to an image you find on the site, you can contact us at <span style="font-weight: 700; font-size: 18px; letter-spacing: 0px;">ayanahmadkhan042@gmail.com</span> with details to have the relevant images removed. We can also add you to an upload blacklist to prevent this from happening in the future.</p>
+</div>
+      </div>
+
+      <script>
+        var video = document.getElementById('myVideo');
+
+function addControls() {
+    video.setAttribute('controls', 'controls');
+}
+        video.addEventListener('click', addControls, function() {
+  
+  if (video.paused) {
+      video.play();
+  } else {
+      video.pause();
+  }
+});
+      </script>
+</body>
+</html>
